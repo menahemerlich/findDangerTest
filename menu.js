@@ -26,8 +26,7 @@ while (flag) {
             await searchPeopleByAge(age)
             break;
         case '5':
-            console.log( repo().then(res=>{console.log(res);
-            }));
+            console.log( repo().then(res=>{console.log(res)}));
             break;
         case '6':
             flag = false

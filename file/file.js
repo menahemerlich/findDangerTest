@@ -1,4 +1,3 @@
-import { getPeopleList, getCallRecords } from "../server/get.js";
 import fs from 'fs';
 
 export async function writeToFile(fileName, data) {
