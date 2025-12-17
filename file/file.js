@@ -27,7 +27,7 @@ export async function searchPeopleByName(name) {
     await readFile('../data/PEOPLE.json').then(res=>{PeopleList = res})
     for (const people of PeopleList) {
         if (people.name.toUpperCase() === name.toUpperCase()){
-            return people
+            console.log(people);
         }
     }console.log('Not found')
      
@@ -38,7 +38,7 @@ export async function searchPeopleByAge(age) {
     await readFile('../data/PEOPLE.json').then(res=>{PeopleList = res})
     for (const people of PeopleList) {
         if (people.age == age){
-            return people
+            console.log(people);
         }
     }console.log('Not found')
      
